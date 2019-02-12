@@ -20,3 +20,10 @@ Route.get(
   "send-form-data",
   "App/Controllers/MainController.sendFormData"
 );
+
+
+Route.get("/", () => {
+  return { message: "Api version: 0.0.1" };
+});
+
+
