@@ -15,9 +15,9 @@ class MainController {
 
     await Mail.send("emails.welcome", requestData, message => {
       message
-        .to("informatica@masterimoveis.com.br")
-        .from("sigem@masterimoveis.com.br", "Sistema landing page")
-        //.cc("robertojunior@masterimoveis.com.br")
+        .to("vendas@masterimoveis.com.br")
+        .from("sigem@masterimoveis.com.br", "Contato Landing Page")
+        .cc("robertojunior@masterimoveis.com.br")
         .subject("Contato landingpage Alphaville");
     });
 
